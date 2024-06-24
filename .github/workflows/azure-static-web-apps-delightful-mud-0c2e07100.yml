@@ -27,6 +27,10 @@ jobs:
       - name: Build Project
         run: npm run build
 
+      # Testing step
+      - name: Run Tests
+        run: npm test
+
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v3
         with:
